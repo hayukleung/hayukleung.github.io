@@ -36,6 +36,9 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 2em;
+  align-content: center;
+  -webkit-align-content: center;
 }
 .icon-lg {
   font-size: 1.33333333em;
@@ -61,9 +64,6 @@
 .icon-share-alt:before {
   content: "\f1e0";
 }
-.icon-home:before {
-  content: "\f015";
-}
 .icon-qq:before {
   content: "\f1d6";
 }
@@ -82,26 +82,14 @@
 .icon-facebook-square:before {
   content: "\f082";
 }
-.icon-weibo:before {
-  content: "\f18a";
-}
-.icon-github:before {
-  content: "\f113";
-}
 .icon-rss-square:before {
   content: "\f143";
 }
 .icon-tag:before {
   content: "\f02b";
 }
-.icon-tags:before {
-  content: "\f02c";
-}
 .icon-book:before {
   content: "\f02d";
-}
-.icon-archives:before {
-  content: "\f187";
 }
 .icon-cc:before {
   content: "\f20a";
@@ -124,11 +112,26 @@
 .icon-close:before {
   content: "\f00d";
 }
-.icon-link:before {
-  content: "\f0c1";
+.icon-home:before {
+  content: "\f015";
+}
+.icon-archives:before {
+  content: "\f187";
+}
+.icon-tags:before {
+  content: "\f02c";
 }
 .icon-android:before {
   content: "\f17b";
+}
+.icon-github:before {
+  content: "\f113";
+}
+.icon-weibo:before {
+  content: "\f18a";
+}
+.icon-link:before {
+  content: "\f0c1";
 }
 *,
 *::before,
@@ -1530,10 +1533,12 @@ a.waves-effect .waves-ripple {
   display: inline-block;
 }
 .tag-list-item:hover {
-  /* .tag-list-count {
-             visibility: visible;
-             top: -70%;
-         }*/
+  /*
+        .tag-list-count {
+            visibility: visible;
+            top: -70%;
+        }
+        */
 }
 .tag-list-item:hover .tag-list-link {
   color: #ff4081;
