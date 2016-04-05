@@ -3,20 +3,38 @@
 <head>
   <meta charset="utf-8">
   
-  <title>C语言编译过程 | xThinker | Android相关</title>
+  <title>segmentation-fault | xThinker | Android相关</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="keywords" content="c">
-  <meta name="description" content="1234567891011121314[hayuk@localhost qinghua]$ touch hello.c [hayuk@localhost qinghua]$ ls hello.c [hayuk@localhost qinghua]$ vim hello.c// liangxiaxu@126.com#include &amp;lt;stdio.h&amp;gt;int main(void)&amp;#123">
+  <meta name="keywords" content="c,error,linux">
+  <meta name="description" content="原文链接
+今天我在运行一个代码时出现了段错误。
+
+（1）用gdb查看core文件信息
+
+
+12345678910111213141516171819[liangxx@localhost bin]$ gdb ./test-client core.2693 GNU gdb (GDB) Red Hat Enterprise Linux (7.0.1-23.el5)Copyright (C) 2009 F">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C语言编译过程">
-<meta property="og:url" content="https://hayukleung.github.io/2016/04/04/C语言编译过程/index.html">
+<meta property="og:title" content="segmentation-fault">
+<meta property="og:url" content="https://hayukleung.github.io/2012/09/21/segmentation-fault/index.html">
 <meta property="og:site_name" content="xThinker">
-<meta property="og:description" content="1234567891011121314[hayuk@localhost qinghua]$ touch hello.c [hayuk@localhost qinghua]$ ls hello.c [hayuk@localhost qinghua]$ vim hello.c// liangxiaxu@126.com#include &amp;lt;stdio.h&amp;gt;int main(void)&amp;#123">
-<meta property="og:updated_time" content="2016-04-04T14:08:17.000Z">
+<meta property="og:description" content="原文链接
+今天我在运行一个代码时出现了段错误。
+
+（1）用gdb查看core文件信息
+
+
+12345678910111213141516171819[liangxx@localhost bin]$ gdb ./test-client core.2693 GNU gdb (GDB) Red Hat Enterprise Linux (7.0.1-23.el5)Copyright (C) 2009 F">
+<meta property="og:updated_time" content="2016-04-05T14:17:08.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="C语言编译过程">
-<meta name="twitter:description" content="1234567891011121314[hayuk@localhost qinghua]$ touch hello.c [hayuk@localhost qinghua]$ ls hello.c [hayuk@localhost qinghua]$ vim hello.c// liangxiaxu@126.com#include &amp;lt;stdio.h&amp;gt;int main(void)&amp;#123">
+<meta name="twitter:title" content="segmentation-fault">
+<meta name="twitter:description" content="原文链接
+今天我在运行一个代码时出现了段错误。
+
+（1）用gdb查看core文件信息
+
+
+12345678910111213141516171819[liangxx@localhost bin]$ gdb ./test-client core.2693 GNU gdb (GDB) Red Hat Enterprise Linux (7.0.1-23.el5)Copyright (C) 2009 F">
   
     <link rel="alternative" href="/atom.xml" title="xThinker" type="application/atom+xml">
   
@@ -111,7 +129,7 @@
         <a href="javascript:;" class="header-icon waves-circle-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">C语言编译过程</div>
+        <div class="flex-col header-title ellipsis">segmentation-fault</div>
         
         <a href="javascript:;" class="header-icon waves-circle-light" id="menu-share">
             <i class="icon icon-lg icon-share-alt"></i>
@@ -121,18 +139,18 @@
 </header>
 <header class="content-header">
   <div class="container">
-    <h1 class="author">C语言编译过程</h1>
-    <h5 class="subtitle">2016-04-04</h5>
+    <h1 class="author">segmentation-fault</h1>
+    <h5 class="subtitle">2012-09-21</h5>
   </div>
 </header>
 
     <div class="container body-wrap">
       
-  <article id="post-C语言编译过程" class="article article-type-post" itemscope itemprop="blogPost">
+  <article id="post-segmentation-fault" class="article article-type-post" itemscope itemprop="blogPost">
     
       <div class="post-meat flex-row">
         <div class="flex-col">
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/c/">c</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/c/">c</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/error/">error</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li></ul>
 </div>
       </div>
       <div class="post-body">
@@ -141,7 +159,7 @@
 
           
           <!-- 博文分享按钮 -->
-<div class="post-share" id="post-share" data-title="C语言编译过程" data-pic="/img/avatar.png" data-summary="梁夏旭的个人博客" data-url="https://hayukleung.github.io/2016/04/04/C语言编译过程/index.html">
+<div class="post-share" id="post-share" data-title="segmentation-fault" data-pic="/img/avatar.png" data-summary="梁夏旭的个人博客" data-url="https://hayukleung.github.io/2012/09/21/segmentation-fault/index.html">
     <div class="tit">分享到：</div>
     <ul class="reset share-icons">
       <li>
@@ -181,25 +199,42 @@
 
           
           <nav class="post-toc-wrap" id="post-toc">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#预处理-替换宏"><span class="post-toc-text">预处理 替换宏</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#编译-检查语法"><span class="post-toc-text">编译 检查语法</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#汇编-生成机器语言"><span class="post-toc-text">汇编 生成机器语言</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#链接-链接-o文件或和外部链接库，生成可执行文件"><span class="post-toc-text">链接 链接.o文件或和外部链接库，生成可执行文件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#执行"><span class="post-toc-text">执行</span></a></li></ol>
+            
           </nav>
           
         </aside>
 
         <div class="post-main">
 
-            <div class="post-content" itemprop="postContent"><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">[hayuk@localhost qinghua]$ touch hello.c </span><br><span class="line">[hayuk@localhost qinghua]$ ls </span><br><span class="line">hello.c </span><br><span class="line">[hayuk@localhost qinghua]$ vim hello.c</span><br><span class="line">// liangxiaxu@126.com</span><br><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main(void)</span><br><span class="line">&#123;</span><br><span class="line">	printf(&quot;hello, gcc!\n&quot;);</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br><span class="line">// vim: set tabstop=4 shiftwidth=4 expandtab:</span><br><span class="line">[hayuk@localhost qinghua]$ ls </span><br><span class="line">hello.c</span><br></pre></td></tr></table></figure>
-<h2 id="预处理-替换宏"><a href="#预处理-替换宏" class="headerlink" title="预处理 替换宏"></a>预处理 替换宏</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[hayuk@localhost qinghua]$ gcc -E hello.c -o hello.i</span><br><span class="line">[hayuk@localhost qinghua]$ ls </span><br><span class="line">hello.c  hello.i</span><br></pre></td></tr></table></figure>
-<h2 id="编译-检查语法"><a href="#编译-检查语法" class="headerlink" title="编译 检查语法"></a>编译 检查语法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[hayuk@localhost qinghua]$ gcc -S hello.i -o hello.s </span><br><span class="line">[hayuk@localhost qinghua]$ ls </span><br><span class="line">hello.c  hello.i  hello.s</span><br></pre></td></tr></table></figure>
-<h2 id="汇编-生成机器语言"><a href="#汇编-生成机器语言" class="headerlink" title="汇编 生成机器语言"></a>汇编 生成机器语言</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[hayuk@localhost qinghua]$ gcc -c hello.s -o hello.o</span><br><span class="line">[hayuk@localhost qinghua]$ ls </span><br><span class="line">hello.c  hello.i  hello.o  hello.s</span><br></pre></td></tr></table></figure>
-<h2 id="链接-链接-o文件或和外部链接库，生成可执行文件"><a href="#链接-链接-o文件或和外部链接库，生成可执行文件" class="headerlink" title="链接 链接.o文件或和外部链接库，生成可执行文件"></a>链接 链接.o文件或和外部链接库，生成可执行文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[hayuk@localhost qinghua]$ gcc hello.o -o hello</span><br><span class="line">[hayuk@localhost qinghua]$ ls </span><br><span class="line">hello  hello.c  hello.i  hello.o  hello.s</span><br></pre></td></tr></table></figure>
-<h2 id="执行"><a href="#执行" class="headerlink" title="执行"></a>执行</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[hayuk@localhost qinghua]$ ./hello </span><br><span class="line">hello, gcc! </span><br><span class="line">[hayuk@localhost qinghua]$ ls </span><br><span class="line">hello  hello.c  hello.i  hello.o  hello.s</span><br></pre></td></tr></table></figure></div>
+            <div class="post-content" itemprop="postContent"><p><a href="http://www.cnblogs.com/liangxiaxu/archive/2012/09/21/2696396.html" target="_blank" rel="external">原文链接</a></p>
+<p>今天我在运行一个代码时出现了段错误。</p>
+<ul>
+<li>（1）用gdb查看core文件信息</li>
+</ul>
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">[liangxx@localhost bin]$ gdb ./test-client core.2693 </span><br><span class="line">GNU gdb (GDB) Red Hat Enterprise Linux (7.0.1-23.el5)</span><br><span class="line">Copyright (C) 2009 Free Software Foundation, Inc.</span><br><span class="line">License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.html&gt;</span><br><span class="line">This is free software: you are free to change and redistribute it.</span><br><span class="line">There is NO WARRANTY, to the extent permitted by law. Type &quot;show copying&quot;</span><br><span class="line">and &quot;show warranty&quot; for details.</span><br><span class="line">This GDB was configured as &quot;x86_64-redhat-linux-gnu&quot;.</span><br><span class="line">For bug reporting instructions, please see:</span><br><span class="line">&lt;http://www.gnu.org/software/gdb/bugs/&gt;...</span><br><span class="line">Reading symbols from /home/liangxx/learning/src/study_boost/study_property_tree/config/bin/test-client...done.</span><br><span class="line">Core was generated by `./test-client&apos;.</span><br><span class="line">Program terminated with signal 11, Segmentation fault.</span><br><span class="line">#0 0x0000000000000001 in ?? ()</span><br><span class="line">(gdb) bt</span><br><span class="line">#0 0x0000000000000001 in ?? ()</span><br><span class="line">#1 0x00007fffe067f6df in ?? ()</span><br><span class="line">#2 0x0000000000000000 in ?? ()</span><br><span class="line">(gdb) q</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>（2）使用gdb设置断点进行单步调试</li>
+</ul>
+<p>未进入main函数就出现段错误！</p>
+<ul>
+<li>（3）检查Makefile内容</li>
+</ul>
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">OBJC=test-client.cpp</span><br><span class="line">TARC=test-client</span><br><span class="line"></span><br><span class="line">CXX=g++</span><br><span class="line">CXXFLAGS=-shared -fPIC -Wall -g -I../hrd/ -L../lib/ -lprotocol</span><br><span class="line"></span><br><span class="line">all:$(TARC)</span><br><span class="line">$(TARC):$(OBJC)</span><br><span class="line">$(CXX) $(OBJC) $(CXXFLAGS) -lclient -o $(TARC)</span><br><span class="line"></span><br><span class="line">install:</span><br><span class="line">cp $(TARC) ../bin/</span><br><span class="line"></span><br><span class="line">clean:</span><br><span class="line">rm -f $(TARC)</span><br></pre></td></tr></table></figure>
+<hr>
+<ul>
+<li>（4）结论</li>
+</ul>
+<p>原来是编译参数搞错，将生成共享库的编译参数错误地用于生成可执行文件！</p>
+</div>
 
             
 <nav class="post-nav flex-row">
   <div class="flex-col waves-block prev">
     
-      <a href="/2016/04/04/标准C的四个常用宏定义/" title="标准C的四个常用宏定义" id="post-prev" class="post-nav-link">
+      <a href="/2012/11/03/C语言编译过程/" title="C语言编译过程" id="post-prev" class="post-nav-link">
         <i class="icon icon-chevron-left"></i>
         <span class="article-nav-title">上一篇</span>
       </a>
@@ -207,7 +242,7 @@
   </div>
   <div class="flex-col waves-block next">
     
-      <a href="/2016/04/03/resume/" title="个人简历" id="post-next" class="post-nav-link">
+      <a href="/2012/05/05/使用autotools制作makefile/" title="使用autotools制作makefile" id="post-next" class="post-nav-link">
         <span class="article-nav-title">下一篇</span>
         <i class="icon icon-chevron-right"></i>
       </a>
@@ -221,7 +256,7 @@
             
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="C语言编译过程" data-title="C语言编译过程" data-url="https://hayukleung.github.io/2016/04/04/C语言编译过程/index.html"></div>
+	<div class="ds-thread" data-thread-key="segmentation-fault" data-title="segmentation-fault" data-url="https://hayukleung.github.io/2012/09/21/segmentation-fault/index.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -259,7 +294,7 @@
 <a href="javascript:;" id="gotop" class="waves-circle-light"><span class="icon icon-lg icon-chevron-up"></span></a>
 
 <!-- 博文分享按钮 -->
-<div class="global-share" id="global-share" data-title="C语言编译过程" data-pic="/img/avatar.png" data-summary="梁夏旭的个人博客" data-url="https://hayukleung.github.io/2016/04/04/C语言编译过程/index.html">
+<div class="global-share" id="global-share" data-title="segmentation-fault" data-pic="/img/avatar.png" data-summary="梁夏旭的个人博客" data-url="https://hayukleung.github.io/2012/09/21/segmentation-fault/index.html">
     <div class="tit">分享到：</div>
     <ul class="reset share-icons">
       <li>
