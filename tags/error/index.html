@@ -45,14 +45,14 @@
         <li class="waves-block">
           <a href="/"  >
             <i class="icon icon-lg icon-common-menu-hayukleung icon-home"></i>
-            主页
+            所有博文
           </a>
         </li>
     
         <li class="waves-block">
           <a href="/archives"  >
             <i class="icon icon-lg icon-common-menu-hayukleung icon-archives"></i>
-            所有博文
+            归档
           </a>
         </li>
     
@@ -127,19 +127,19 @@
 
     <div class="container body-wrap">
       
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap flex-row">
-        <div class="archive-year-wrap">
-          <a href="/archives/2013" class="archive-year waves-circle-light">2013</a>
-        </div>
-        <div class="archives flex-col">
-    
-    <article class="archive-article archive-type-post">
+
+
+
+
+
+
+<section class="archives-wrap flex-row">
+	<div class="archive-year-wrap">
+		<a href="/archives/2013" class="archive-year waves-circle-light">2013</a>
+	</div>
+	<div class="archives flex-col">
+		
+		<article class="archive-article archive-type-post">
   <div class="archive-article-inner">
     <header class="archive-article-header flex-row flex-middle">
       	<div class="flex-col">
@@ -156,7 +156,7 @@
 
         </div>
         <time datetime="2013-02-07T14:10:56.000Z" itemprop="datePublished" class="post-tiem">
-  2月 7
+  02-07
 </time>
     </header>
     
@@ -164,20 +164,20 @@
 
   </div>
 </article>
-  
-    
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap flex-row">
-        <div class="archive-year-wrap">
-          <a href="/archives/2012" class="archive-year waves-circle-light">2012</a>
-        </div>
-        <div class="archives flex-col">
-    
-    <article class="archive-article archive-type-post">
+		
+
+
+
+</div></section>
+
+
+<section class="archives-wrap flex-row">
+	<div class="archive-year-wrap">
+		<a href="/archives/2012" class="archive-year waves-circle-light">2012</a>
+	</div>
+	<div class="archives flex-col">
+		
+		<article class="archive-article archive-type-post">
   <div class="archive-article-inner">
     <header class="archive-article-header flex-row flex-middle">
       	<div class="flex-col">
@@ -194,7 +194,7 @@
 
         </div>
         <time datetime="2012-09-21T14:13:38.000Z" itemprop="datePublished" class="post-tiem">
-  9月 21
+  09-21
 </time>
     </header>
     
@@ -202,12 +202,10 @@
 
   </div>
 </article>
-  
-  
-      </div>
-    </section>
-  
-
+		
+		
+	</div>
+</section>
 
 
     </div>
@@ -256,6 +254,29 @@
 <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
 
 <script src="/js/main.js"></script>
+
+
+<! -- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 

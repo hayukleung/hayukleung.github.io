@@ -8,33 +8,18 @@
   
   <meta name="keywords" content="c">
   <meta name="description" content="原文地址
-flat模式
-①#autoscan
-1生成configure.scan
-
-②改写configure.scan
-1234567AC_INIT(最终可执行文件名, 版本号)AM_INIT_AUTOMAKEAC_CONFIG_SRCDIR(源文件所在文件夹中的一个文件名，用于检测路径)AC_CONFIG_HEADER(config.h)AC_OUTPUT(Makefile)AC_PROG_RA">
+flat模式123456789101112131415161718192021222324252627- ①#autoscan生成configure.scan- ②改写configure.scanAC_INIT(最终可执行文件名, 版本号)AM_INIT_AUTOMAKEAC_CONFIG_SRCDIR(源文件所在文件夹中的一个文件名，用于检测路径)AC_CONFIG_HEADER(co">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用autotools制作makefile">
 <meta property="og:url" content="https://hayukleung.github.io/2012/05/05/使用autotools制作makefile/index.html">
 <meta property="og:site_name" content="xThinker">
 <meta property="og:description" content="原文地址
-flat模式
-①#autoscan
-1生成configure.scan
-
-②改写configure.scan
-1234567AC_INIT(最终可执行文件名, 版本号)AM_INIT_AUTOMAKEAC_CONFIG_SRCDIR(源文件所在文件夹中的一个文件名，用于检测路径)AC_CONFIG_HEADER(config.h)AC_OUTPUT(Makefile)AC_PROG_RA">
-<meta property="og:updated_time" content="2016-04-05T14:34:39.000Z">
+flat模式123456789101112131415161718192021222324252627- ①#autoscan生成configure.scan- ②改写configure.scanAC_INIT(最终可执行文件名, 版本号)AM_INIT_AUTOMAKEAC_CONFIG_SRCDIR(源文件所在文件夹中的一个文件名，用于检测路径)AC_CONFIG_HEADER(co">
+<meta property="og:updated_time" content="2016-04-06T04:37:49.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用autotools制作makefile">
 <meta name="twitter:description" content="原文地址
-flat模式
-①#autoscan
-1生成configure.scan
-
-②改写configure.scan
-1234567AC_INIT(最终可执行文件名, 版本号)AM_INIT_AUTOMAKEAC_CONFIG_SRCDIR(源文件所在文件夹中的一个文件名，用于检测路径)AC_CONFIG_HEADER(config.h)AC_OUTPUT(Makefile)AC_PROG_RA">
+flat模式123456789101112131415161718192021222324252627- ①#autoscan生成configure.scan- ②改写configure.scanAC_INIT(最终可执行文件名, 版本号)AM_INIT_AUTOMAKEAC_CONFIG_SRCDIR(源文件所在文件夹中的一个文件名，用于检测路径)AC_CONFIG_HEADER(co">
   
     <link rel="alternative" href="/atom.xml" title="xThinker" type="application/atom+xml">
   
@@ -64,14 +49,14 @@ flat模式
         <li class="waves-block">
           <a href="/"  >
             <i class="icon icon-lg icon-common-menu-hayukleung icon-home"></i>
-            主页
+            所有博文
           </a>
         </li>
     
         <li class="waves-block">
           <a href="/archives"  >
             <i class="icon icon-lg icon-common-menu-hayukleung icon-archives"></i>
-            所有博文
+            归档
           </a>
         </li>
     
@@ -207,49 +192,14 @@ flat模式
         <div class="post-main">
 
             <div class="post-content" itemprop="postContent"><p><a href="http://www.cnblogs.com/liangxiaxu/archive/2012/05/05/2485099.html" target="_blank" rel="external">原文地址</a></p>
-<h2 id="flat模式"><a href="#flat模式" class="headerlink" title="flat模式"></a>flat模式</h2><ul>
-<li><p>①#autoscan</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">生成configure.scan</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>②改写configure.scan</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">AC_INIT(最终可执行文件名, 版本号)</span><br><span class="line">AM_INIT_AUTOMAKE</span><br><span class="line">AC_CONFIG_SRCDIR(源文件所在文件夹中的一个文件名，用于检测路径)</span><br><span class="line">AC_CONFIG_HEADER(config.h)</span><br><span class="line">AC_OUTPUT(Makefile)</span><br><span class="line">AC_PROG_RANLIB</span><br><span class="line">改写完毕后另存为configure.in</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>③#aclocal</p>
-</li>
-<li>④#autoconf</li>
-<li>⑤#autoheader</li>
-<li><p>⑥编辑Makefile.am</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">AUTOMAKE_OPTIONS=foreign</span><br><span class="line">bin_PROGRAMS=可执行文件名1可执行文件名2 ......可执行文件名n</span><br><span class="line">可执行文件名1_SOURCES=该可执行文件生成所必须的源文件、头文件等，以空格分开</span><br><span class="line">可执行文件名2_SOURCES=该可执行文件生成所必须的源文件、头文件等，以空格分开</span><br><span class="line">......</span><br><span class="line">可执行文件名n_SOURCES=该可执行文件生成所必须的源文件、头文件等，以空格分开</span><br><span class="line">可执行文件名1_LDADD=-l库名</span><br><span class="line">......</span><br><span class="line">可执行文件名n_LDADD=-l库名</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>⑦#automake –add-missing</p>
-</li>
-<li>⑧#./configure</li>
-<li>⑨#make</li>
-<li>⑩生成可执行文件，运行。</li>
-</ul>
-<h2 id="deep模式"><a href="#deep模式" class="headerlink" title="deep模式"></a>deep模式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">以例子说明</span><br><span class="line">环境：Linux Redhat Enterprise</span><br><span class="line">文件结构：</span><br><span class="line">根目录：</span><br><span class="line">/rtcp</span><br><span class="line">子目录：</span><br><span class="line">/rtcp/src：包含server.c client.c</span><br><span class="line">/rtcp/include：包含rtcp.c rtcp.h</span><br><span class="line">目标：在根目录/rtcp下建立Makefile</span><br><span class="line">步骤：</span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>①进入/rtcp</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#autoscan</span><br><span class="line">产生configure.scan</span><br><span class="line">修改该文件：</span><br><span class="line">AM_INIT_AUTOMAKE</span><br><span class="line"># Checks for programs.</span><br><span class="line">AC_PROG_CC </span><br><span class="line">AM_PROG_CC_C_O</span><br><span class="line"># Checks for libraries. </span><br><span class="line">AC_PROG_RANLIB</span><br><span class="line">AC_OUTPUT(Makefile)</span><br><span class="line">保存为configure.in</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>②</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#aclocal</span><br><span class="line">#autoconf</span><br><span class="line">#autoheader</span><br><span class="line">#gedit Makefile.am</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>③编辑Makefile.am</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">AUTOMAKE_OPTIONS=subdir-objects </span><br><span class="line">bin_PROGRAMS=server client </span><br><span class="line">server_SOURCES=src/server.c include/rtcp.c include/rtcp.h </span><br><span class="line">client_SOURCES=src/client.c include/rtcp.c include/rtcp.h </span><br><span class="line">server_LDADD=-lpthread </span><br><span class="line">client_LDADD=-lpthread</span><br><span class="line">server_LDFLAGS=-L/path/to/lib/pthread/</span><br><span class="line">client_LDFLAGS=-L/path/to/lib/pthread/</span><br><span class="line">保存</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>④#automake –add-missing</p>
-</li>
-<li>⑤#./configure</li>
-<li>⑥#make</li>
-</ul>
-</div>
+<h2 id="flat模式"><a href="#flat模式" class="headerlink" title="flat模式"></a>flat模式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">- ①#autoscan</span><br><span class="line">生成configure.scan</span><br><span class="line">- ②改写configure.scan</span><br><span class="line">AC_INIT(最终可执行文件名, 版本号)</span><br><span class="line">AM_INIT_AUTOMAKE</span><br><span class="line">AC_CONFIG_SRCDIR(源文件所在文件夹中的一个文件名，用于检测路径)</span><br><span class="line">AC_CONFIG_HEADER(config.h)</span><br><span class="line">AC_OUTPUT(Makefile)</span><br><span class="line">AC_PROG_RANLIB</span><br><span class="line">改写完毕后另存为configure.in</span><br><span class="line">- ③#aclocal</span><br><span class="line">- ④#autoconf</span><br><span class="line">- ⑤#autoheader</span><br><span class="line">- ⑥编辑Makefile.am</span><br><span class="line">AUTOMAKE_OPTIONS=foreign</span><br><span class="line">bin_PROGRAMS=可执行文件名1可执行文件名2 ......可执行文件名n</span><br><span class="line">可执行文件名1_SOURCES=该可执行文件生成所必须的源文件、头文件等，以空格分开</span><br><span class="line">可执行文件名2_SOURCES=该可执行文件生成所必须的源文件、头文件等，以空格分开</span><br><span class="line">......</span><br><span class="line">可执行文件名n_SOURCES=该可执行文件生成所必须的源文件、头文件等，以空格分开</span><br><span class="line">可执行文件名1_LDADD=-l库名</span><br><span class="line">......</span><br><span class="line">可执行文件名n_LDADD=-l库名</span><br><span class="line">- ⑦#automake --add-missing</span><br><span class="line">- ⑧#./configure</span><br><span class="line">- ⑨#make</span><br><span class="line">- ⑩生成可执行文件，运行。</span><br></pre></td></tr></table></figure>
+<h2 id="deep模式"><a href="#deep模式" class="headerlink" title="deep模式"></a>deep模式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">以例子说明</span><br><span class="line">环境：Linux Redhat Enterprise</span><br><span class="line">文件结构：</span><br><span class="line">根目录：</span><br><span class="line">/rtcp</span><br><span class="line">子目录：</span><br><span class="line">/rtcp/src：包含server.c client.c</span><br><span class="line">/rtcp/include：包含rtcp.c rtcp.h</span><br><span class="line">目标：在根目录/rtcp下建立Makefile</span><br><span class="line">步骤：</span><br><span class="line">- ①进入/rtcp</span><br><span class="line">#autoscan</span><br><span class="line">产生configure.scan</span><br><span class="line">修改该文件：</span><br><span class="line">AM_INIT_AUTOMAKE</span><br><span class="line"># Checks for programs.</span><br><span class="line">AC_PROG_CC </span><br><span class="line">AM_PROG_CC_C_O</span><br><span class="line"># Checks for libraries. </span><br><span class="line">AC_PROG_RANLIB</span><br><span class="line">AC_OUTPUT(Makefile)</span><br><span class="line">保存为configure.in</span><br><span class="line">- ②</span><br><span class="line">#aclocal</span><br><span class="line">#autoconf</span><br><span class="line">#autoheader</span><br><span class="line">#gedit Makefile.am</span><br><span class="line">- ③编辑Makefile.am</span><br><span class="line">AUTOMAKE_OPTIONS=subdir-objects </span><br><span class="line">bin_PROGRAMS=server client </span><br><span class="line">server_SOURCES=src/server.c include/rtcp.c include/rtcp.h </span><br><span class="line">client_SOURCES=src/client.c include/rtcp.c include/rtcp.h </span><br><span class="line">server_LDADD=-lpthread </span><br><span class="line">client_LDADD=-lpthread</span><br><span class="line">server_LDFLAGS=-L/path/to/lib/pthread/</span><br><span class="line">client_LDFLAGS=-L/path/to/lib/pthread/</span><br><span class="line">保存</span><br><span class="line">- ④#automake --add-missing</span><br><span class="line">- ⑤#./configure</span><br><span class="line">- ⑥#make</span><br></pre></td></tr></table></figure></div>
 
             
 <nav class="post-nav flex-row">
   <div class="flex-col waves-block prev">
     
-      <a href="/2012/09/21/segmentation-fault/" title="segmentation-fault" id="post-prev" class="post-nav-link">
+      <a href="/2012/09/01/const-in-cpp/" title="const-in-cpp" id="post-prev" class="post-nav-link">
         <i class="icon icon-chevron-left"></i>
         <span class="article-nav-title">上一篇</span>
       </a>
@@ -344,6 +294,29 @@ flat模式
 <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
 
 <script src="/js/main.js"></script>
+
+
+<! -- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
 
