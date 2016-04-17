@@ -1036,7 +1036,7 @@ a.waves-effect .waves-ripple {
 #gotop {
   position: fixed;
   right: 16px;
-  bottom: 60px;
+  bottom: 30px;
   z-index: 30;
   width: 56px;
   height: 56px;
@@ -1303,6 +1303,9 @@ a.waves-effect .waves-ripple {
   font-weight: 500;
   border-bottom: 1px solid #9e9e9e;
 }
+.post-content strong a {
+  border-color: #9e9e9e;
+}
 .post-content h1 {
   font-size: 24px;
 }
@@ -1533,12 +1536,10 @@ a.waves-effect .waves-ripple {
   display: inline-block;
 }
 .tag-list-item:hover {
-  /*
-        .tag-list-count {
-            visibility: visible;
-            top: -70%;
-        }
-        */
+  /* .tag-list-count {
+             visibility: visible;
+             top: -70%;
+         }*/
 }
 .tag-list-item:hover .tag-list-link {
   color: #9e9e9e;
