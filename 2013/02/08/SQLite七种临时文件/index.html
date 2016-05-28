@@ -8,18 +8,21 @@
   
   <meta name="keywords" content="database">
   <meta name="description" content="原文链接
-1.Rollback Journals出现在事务的起始点，消失在事务的结束点若PRAGMA locking_mode=EXCLUSIVE; // 默认为normal则不会在事务结束点删除回滚日志若pragma journal_mode=persist; // 默认为delete也不会在事务结束点删除回滚日志若pragma journal_mode=off;则不会产生回滚日志存储于磁盘上">
+1.Rollback Journals
+出现在事务的起始点，消失在事务的结束点若PRAGMA locking_mode=EXCLUSIVE; // 默认为normal则不会在事务结束点删除回滚日志若pragma journal_mode=persist; // 默认为delete也不会在事务结束点删除回滚日志若pragma journal_mode=off;则不会产生回滚日志存储于磁盘上">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SQLite七种临时文件">
 <meta property="og:url" content="https://hayukleung.github.io/2013/02/08/SQLite七种临时文件/index.html">
 <meta property="og:site_name" content="xThinker">
 <meta property="og:description" content="原文链接
-1.Rollback Journals出现在事务的起始点，消失在事务的结束点若PRAGMA locking_mode=EXCLUSIVE; // 默认为normal则不会在事务结束点删除回滚日志若pragma journal_mode=persist; // 默认为delete也不会在事务结束点删除回滚日志若pragma journal_mode=off;则不会产生回滚日志存储于磁盘上">
-<meta property="og:updated_time" content="2016-04-05T14:19:10.000Z">
+1.Rollback Journals
+出现在事务的起始点，消失在事务的结束点若PRAGMA locking_mode=EXCLUSIVE; // 默认为normal则不会在事务结束点删除回滚日志若pragma journal_mode=persist; // 默认为delete也不会在事务结束点删除回滚日志若pragma journal_mode=off;则不会产生回滚日志存储于磁盘上">
+<meta property="og:updated_time" content="2016-05-28T07:54:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SQLite七种临时文件">
 <meta name="twitter:description" content="原文链接
-1.Rollback Journals出现在事务的起始点，消失在事务的结束点若PRAGMA locking_mode=EXCLUSIVE; // 默认为normal则不会在事务结束点删除回滚日志若pragma journal_mode=persist; // 默认为delete也不会在事务结束点删除回滚日志若pragma journal_mode=off;则不会产生回滚日志存储于磁盘上">
+1.Rollback Journals
+出现在事务的起始点，消失在事务的结束点若PRAGMA locking_mode=EXCLUSIVE; // 默认为normal则不会在事务结束点删除回滚日志若pragma journal_mode=persist; // 默认为delete也不会在事务结束点删除回滚日志若pragma journal_mode=off;则不会产生回滚日志存储于磁盘上">
   
     <link rel="alternative" href="/atom.xml" title="xThinker" type="application/atom+xml">
   
@@ -143,7 +146,10 @@
         <aside class="post-widget" id="post-widget">
 
           
-          <div class="post-share" id="post-share" data-title="SQLite七种临时文件" data-pic="/img/avatar.png" data-summary="梁夏旭的个人博客" data-url="https://hayukleung.github.io/2013/02/08/SQLite七种临时文件/index.html">
+          <div class="post-share" id="post-share" data-title="SQLite七种临时文件" data-pic="/img/avatar.png" data-summary="&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/liangxiaxu/archive/2013/02/08/2909236.html&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-Rollback-Journals&quot;&gt;&lt;a href=&quot;#1-Rollback-Journals&quot; class=&quot;headerlink&quot; title=&quot;1.Rollback Journals&quot;&gt;&lt;/a&gt;1.Rollback Journals&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;出现在事务的起始点，消失在事务的结束点&lt;br&gt;若PRAGMA locking_mode=EXCLUSIVE; // 默认为normal&lt;br&gt;则不会在事务结束点删除回滚日志&lt;br&gt;若pragma journal_mode=persist; // 默认为delete&lt;br&gt;也不会在事务结束点删除回滚日志&lt;br&gt;若pragma journal_mode=off;&lt;br&gt;则不会产生回滚日志&lt;br&gt;存储于磁盘上&lt;/p&gt;
+&lt;/blockquote&gt;" data-url="https://hayukleung.github.io/2013/02/08/SQLite七种临时文件/index.html">
     <div class="tit">分享到：</div>
     <ul class="reset share-icons">
       <li>
@@ -183,7 +189,7 @@
 
           
           <nav class="post-toc-wrap" id="post-toc">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-Rollback-Journals"><span class="post-toc-text">1.Rollback Journals</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-Master-Journal-Files"><span class="post-toc-text">2.Master Journal Files</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3-Statement-Journal-Files"><span class="post-toc-text">3.Statement Journal Files</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4-Temp-Databases"><span class="post-toc-text">4.Temp Databases</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#5-Materializations-Of-Views-And-Subqueries"><span class="post-toc-text">5.Materializations Of Views And Subqueries</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#6-Transient-Indices"><span class="post-toc-text">6.Transient Indices</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#7-Transient-Database-Used-By-VACUUM"><span class="post-toc-text">7.Transient Database Used By VACUUM</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#表一"><span class="post-toc-text">表一</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#表二"><span class="post-toc-text">表二</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-Rollback-Journals"><span class="post-toc-text">1.Rollback Journals</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-Master-Journal-Files"><span class="post-toc-text">2.Master Journal Files</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3-Statement-Journal-Files"><span class="post-toc-text">3.Statement Journal Files</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4-Temp-Databases"><span class="post-toc-text">4.Temp Databases</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#5-Materializations-Of-Views-And-Subqueries"><span class="post-toc-text">5.Materializations Of Views And Subqueries</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#6-Transient-Indices"><span class="post-toc-text">6.Transient Indices</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#7-Transient-Database-Used-By-VACUUM"><span class="post-toc-text">7.Transient Database Used By VACUUM</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#总结"><span class="post-toc-text">总结</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#表一"><span class="post-toc-text">表一</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#表二"><span class="post-toc-text">表二</span></a></li></ol></li></ol>
           </nav>
           
         </aside>
@@ -191,15 +197,38 @@
         <div class="post-main">
 
             <div class="post-content" itemprop="postContent"><p><a href="http://www.cnblogs.com/liangxiaxu/archive/2013/02/08/2909236.html" target="_blank" rel="external">原文链接</a></p>
-<h2 id="1-Rollback-Journals"><a href="#1-Rollback-Journals" class="headerlink" title="1.Rollback Journals"></a>1.Rollback Journals</h2><p>出现在事务的起始点，消失在事务的结束点<br>若PRAGMA locking_mode=EXCLUSIVE; // 默认为normal<br>则不会在事务结束点删除回滚日志<br>若pragma journal_mode=persist; // 默认为delete<br>也不会在事务结束点删除回滚日志<br>若pragma journal_mode=off;<br>则不会产生回滚日志<br>存储于磁盘上</p>
-<h2 id="2-Master-Journal-Files"><a href="#2-Master-Journal-Files" class="headerlink" title="2.Master Journal Files"></a>2.Master Journal Files</h2><p>在一个数据库连接使用attach命令接入N个外部数据库的情况下，事务开始点产生的回滚日志<br>存储于磁盘上</p>
-<h2 id="3-Statement-Journal-Files"><a href="#3-Statement-Journal-Files" class="headerlink" title="3.Statement Journal Files"></a>3.Statement Journal Files</h2><p>针对单个SQL语句的回滚日志<br>存储于磁盘上</p>
-<h2 id="4-Temp-Databases"><a href="#4-Temp-Databases" class="headerlink" title="4.Temp Databases"></a>4.Temp Databases</h2><p>使用PRAGMA synchronous=OFF<br>使用PRAGMA journal_mode=PERSIST<br>操作速度较快，一般用于临时日志的记录操作</p>
-<h2 id="5-Materializations-Of-Views-And-Subqueries"><a href="#5-Materializations-Of-Views-And-Subqueries" class="headerlink" title="5.Materializations Of Views And Subqueries"></a>5.Materializations Of Views And Subqueries</h2><p>存储视图、子查询等临时表</p>
-<h2 id="6-Transient-Indices"><a href="#6-Transient-Indices" class="headerlink" title="6.Transient Indices"></a>6.Transient Indices</h2><p>瞬时索引，比如<br>ORDER BY从句<br>GROUP BY从句<br>DISTINCT聚合查询关键词<br>复合SELECT从句joined by UNION, EXCEPT或INTERSECT</p>
-<h2 id="7-Transient-Database-Used-By-VACUUM"><a href="#7-Transient-Database-Used-By-VACUUM" class="headerlink" title="7.Transient Database Used By VACUUM"></a>7.Transient Database Used By VACUUM</h2><p>使用VACUUM压缩数据库文件时使用的临时文件</p>
-<p>Temp Databases<br>Materializations Of Views And Subqueries<br>Transient Indices<br>Transient Database Used By VACUUM<br>这四类临时文件的存储位置受pragma temp_store和SQLITE_TEMP_STORE影响，如下表所示：</p>
-<h2 id="表一"><a href="#表一" class="headerlink" title="表一"></a>表一</h2><table>
+<h2 id="1-Rollback-Journals"><a href="#1-Rollback-Journals" class="headerlink" title="1.Rollback Journals"></a>1.Rollback Journals</h2><blockquote>
+<p>出现在事务的起始点，消失在事务的结束点<br>若PRAGMA locking_mode=EXCLUSIVE; // 默认为normal<br>则不会在事务结束点删除回滚日志<br>若pragma journal_mode=persist; // 默认为delete<br>也不会在事务结束点删除回滚日志<br>若pragma journal_mode=off;<br>则不会产生回滚日志<br>存储于磁盘上</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="2-Master-Journal-Files"><a href="#2-Master-Journal-Files" class="headerlink" title="2.Master Journal Files"></a>2.Master Journal Files</h2><blockquote>
+<p>在一个数据库连接使用attach命令接入N个外部数据库的情况下，事务开始点产生的回滚日志<br>存储于磁盘上</p>
+</blockquote>
+<h2 id="3-Statement-Journal-Files"><a href="#3-Statement-Journal-Files" class="headerlink" title="3.Statement Journal Files"></a>3.Statement Journal Files</h2><blockquote>
+<p>针对单个SQL语句的回滚日志<br>存储于磁盘上</p>
+</blockquote>
+<h2 id="4-Temp-Databases"><a href="#4-Temp-Databases" class="headerlink" title="4.Temp Databases"></a>4.Temp Databases</h2><blockquote>
+<p>使用PRAGMA synchronous=OFF<br>使用PRAGMA journal_mode=PERSIST<br>操作速度较快，一般用于临时日志的记录操作</p>
+</blockquote>
+<h2 id="5-Materializations-Of-Views-And-Subqueries"><a href="#5-Materializations-Of-Views-And-Subqueries" class="headerlink" title="5.Materializations Of Views And Subqueries"></a>5.Materializations Of Views And Subqueries</h2><blockquote>
+<p>存储视图、子查询等临时表</p>
+</blockquote>
+<h2 id="6-Transient-Indices"><a href="#6-Transient-Indices" class="headerlink" title="6.Transient Indices"></a>6.Transient Indices</h2><blockquote>
+<p>瞬时索引，比如<br>ORDER BY从句<br>GROUP BY从句<br>DISTINCT聚合查询关键词<br>复合SELECT从句joined by UNION, EXCEPT或INTERSECT</p>
+</blockquote>
+<h2 id="7-Transient-Database-Used-By-VACUUM"><a href="#7-Transient-Database-Used-By-VACUUM" class="headerlink" title="7.Transient Database Used By VACUUM"></a>7.Transient Database Used By VACUUM</h2><blockquote>
+<p>使用VACUUM压缩数据库文件时使用的临时文件</p>
+</blockquote>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>Temp Databases</li>
+<li>Materializations Of Views And Subqueries</li>
+<li>Transient Indices</li>
+<li>Transient Database Used By VACUUM</li>
+</ul>
+<blockquote>
+<p>这四类临时文件的存储位置受pragma temp_store和SQLITE_TEMP_STORE影响，如下表所示：</p>
+</blockquote>
+<h3 id="表一"><a href="#表一" class="headerlink" title="表一"></a>表一</h3><table>
 <thead>
 <tr>
 <th style="text-align:left">名称</th>
@@ -210,8 +239,8 @@
 <tbody>
 <tr>
 <td style="text-align:left">Rollback Journals</td>
-<td style="text-align:left">回滚日志，存在于事务的始末</td>
-<td style="text-align:left">始终存储于磁盘上，这三类文件只是出现的场合不一样，而本质是一样的，可以总结为事务的回滚日志文件命名为’dbname.db-journal’</td>
+<td style="text-align:left">回滚日志<br>存在于事务的始末</td>
+<td style="text-align:left">始终存储于磁盘上<br>这三类文件只是出现的场合不一样<br>而本质是一样的<br>可以总结为事务的回滚日志文件命名为’dbname.db-journal’</td>
 </tr>
 <tr>
 <td style="text-align:left">Master Journal Files</td>
@@ -245,10 +274,10 @@
 </tr>
 </tbody>
 </table>
-<h2 id="表二"><a href="#表二" class="headerlink" title="表二"></a>表二</h2><table>
+<h3 id="表二"><a href="#表二" class="headerlink" title="表二"></a>表二</h3><table>
 <thead>
 <tr>
-<th style="text-align:left">注：即使将它们的位置设置为磁盘，SQLite也会将它们存储在内存页中，直到内存页满才写进磁盘，而这个内存页大小由SQLITE_DEFAULT_TEMP_CACHE_SIZE决定，默认是500页。</th>
+<th style="text-align:left">注：<br>即使将它们的位置设置为磁盘<br>SQLite也会将它们存储在内存页中<br>直到内存页满才写进磁盘<br>而这个内存页大小由<br>SQLITE_DEFAULT_TEMP_CACHE_SIZE决定<br>默认是500页</th>
 <th style="text-align:left"></th>
 <th style="text-align:left"></th>
 <th style="text-align:left"></th>
@@ -299,7 +328,7 @@
 <nav class="post-nav flex-row">
   <div class="flex-col waves-block prev">
     
-      <a href="/2016/03/30/hello-world/" title="Hello World" id="post-prev" class="post-nav-link">
+      <a href="/2016/03/30/test/" title="Test" id="post-prev" class="post-nav-link">
         <i class="icon icon-chevron-left"></i>
         <span class="article-nav-title">上一篇</span>
       </a>
@@ -358,7 +387,10 @@
 <div class="mask" id="mask"></div>
 <a href="javascript:;" id="gotop" class="waves-circle-light"><span class="icon icon-lg icon-chevron-up"></span></a>
 
-<div class="global-share" id="global-share" data-title="SQLite七种临时文件" data-pic="/img/avatar.png" data-summary="梁夏旭的个人博客" data-url="https://hayukleung.github.io/2013/02/08/SQLite七种临时文件/index.html">
+<div class="global-share" id="global-share" data-title="SQLite七种临时文件" data-pic="/img/avatar.png" data-summary="&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/liangxiaxu/archive/2013/02/08/2909236.html&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-Rollback-Journals&quot;&gt;&lt;a href=&quot;#1-Rollback-Journals&quot; class=&quot;headerlink&quot; title=&quot;1.Rollback Journals&quot;&gt;&lt;/a&gt;1.Rollback Journals&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;出现在事务的起始点，消失在事务的结束点&lt;br&gt;若PRAGMA locking_mode=EXCLUSIVE; // 默认为normal&lt;br&gt;则不会在事务结束点删除回滚日志&lt;br&gt;若pragma journal_mode=persist; // 默认为delete&lt;br&gt;也不会在事务结束点删除回滚日志&lt;br&gt;若pragma journal_mode=off;&lt;br&gt;则不会产生回滚日志&lt;br&gt;存储于磁盘上&lt;/p&gt;
+&lt;/blockquote&gt;" data-url="https://hayukleung.github.io/2013/02/08/SQLite七种临时文件/index.html">
     <div class="tit">分享到：</div>
     <ul class="reset share-icons">
       <li>
