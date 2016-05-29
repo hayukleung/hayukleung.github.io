@@ -8,21 +8,24 @@
   
   <meta name="keywords" content="c">
   <meta name="description" content="原文链接
-extern “C”的双重含义1.被它修饰的目标是“extern ”；2.被它修饰的目标是“C ”。让我们来详细解读这两重含义。被extern “C”限定的函数或变量是extern类型的。extern 是C/C++ 语言中表明函数和全局变量作用范围（可见性）的关键字，该关键字告诉编译器，其声明的函数和变量可以在本模块或其它模块中使用。记住下列语句：1extern int a;
-仅仅是一个">
+extern “C”的双重含义
+被它修饰的目标是“extern”
+被它修饰的目标是“C”">
 <meta property="og:type" content="article">
 <meta property="og:title" content="extern-c">
 <meta property="og:url" content="https://hayukleung.github.io/2012/09/02/extern-c/index.html">
 <meta property="og:site_name" content="xThinker">
 <meta property="og:description" content="原文链接
-extern “C”的双重含义1.被它修饰的目标是“extern ”；2.被它修饰的目标是“C ”。让我们来详细解读这两重含义。被extern “C”限定的函数或变量是extern类型的。extern 是C/C++ 语言中表明函数和全局变量作用范围（可见性）的关键字，该关键字告诉编译器，其声明的函数和变量可以在本模块或其它模块中使用。记住下列语句：1extern int a;
-仅仅是一个">
-<meta property="og:updated_time" content="2016-04-08T10:53:28.000Z">
+extern “C”的双重含义
+被它修饰的目标是“extern”
+被它修饰的目标是“C”">
+<meta property="og:updated_time" content="2016-05-29T11:57:36.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="extern-c">
 <meta name="twitter:description" content="原文链接
-extern “C”的双重含义1.被它修饰的目标是“extern ”；2.被它修饰的目标是“C ”。让我们来详细解读这两重含义。被extern “C”限定的函数或变量是extern类型的。extern 是C/C++ 语言中表明函数和全局变量作用范围（可见性）的关键字，该关键字告诉编译器，其声明的函数和变量可以在本模块或其它模块中使用。记住下列语句：1extern int a;
-仅仅是一个">
+extern “C”的双重含义
+被它修饰的目标是“extern”
+被它修饰的目标是“C”">
   
     <link rel="alternative" href="/atom.xml" title="xThinker" type="application/atom+xml">
   
@@ -146,7 +149,11 @@ extern “C”的双重含义1.被它修饰的目标是“extern ”；2.被它�
         <aside class="post-widget" id="post-widget">
 
           
-          <div class="post-share" id="post-share" data-title="extern-c" data-pic="/img/avatar.png" data-summary="梁夏旭的个人博客" data-url="https://hayukleung.github.io/2012/09/02/extern-c/index.html">
+          <div class="post-share" id="post-share" data-title="extern-c" data-pic="/img/avatar.png" data-summary="&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/liangxiaxu/archive/2012/09/02/2667730.html&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;extern-“C”的双重含义&quot;&gt;&lt;a href=&quot;#extern-“C”的双重含义&quot; class=&quot;headerlink&quot; title=&quot;extern “C”的双重含义&quot;&gt;&lt;/a&gt;extern “C”的双重含义&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;被它修饰的目标是“extern”&lt;/li&gt;
+&lt;li&gt;被它修饰的目标是“C”&lt;/li&gt;
+&lt;/ol&gt;" data-url="https://hayukleung.github.io/2012/09/02/extern-c/index.html">
     <div class="tit">分享到：</div>
     <ul class="reset share-icons">
       <li>
@@ -186,7 +193,7 @@ extern “C”的双重含义1.被它修饰的目标是“extern ”；2.被它�
 
           
           <nav class="post-toc-wrap" id="post-toc">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#extern-“C”的双重含义"><span class="post-toc-text">extern “C”的双重含义</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#未加extern-“C”-声明时的编译方式"><span class="post-toc-text">未加extern “C” 声明时的编译方式</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#未加extern-“C”声明时的连接方式"><span class="post-toc-text">未加extern “C”声明时的连接方式</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#加extern-“C”-声明后的编译和连接方式"><span class="post-toc-text">加extern “C” 声明后的编译和连接方式</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#extern-“C”的惯用法"><span class="post-toc-text">extern “C”的惯用法</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#C-引用C-函数工程例子"><span class="post-toc-text">C++ 引用C 函数工程例子</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#C-引用C-函数工程例子-1"><span class="post-toc-text">C 引用C++ 函数工程例子</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#extern-“C”的双重含义"><span class="post-toc-text">extern “C”的双重含义</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#未加extern-“C”声明时的编译方式"><span class="post-toc-text">未加extern “C”声明时的编译方式</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#未加extern-“C”声明时的连接方式"><span class="post-toc-text">未加extern “C”声明时的连接方式</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#加extern-“C”声明后的编译和连接方式"><span class="post-toc-text">加extern “C”声明后的编译和连接方式</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#extern-“C”的惯用法"><span class="post-toc-text">extern “C”的惯用法</span></a></li></ol>
           </nav>
           
         </aside>
@@ -194,23 +201,45 @@ extern “C”的双重含义1.被它修饰的目标是“extern ”；2.被它�
         <div class="post-main">
 
             <div class="post-content" itemprop="postContent"><p><a href="http://www.cnblogs.com/liangxiaxu/archive/2012/09/02/2667730.html" target="_blank" rel="external">原文链接</a></p>
-<h2 id="extern-“C”的双重含义"><a href="#extern-“C”的双重含义" class="headerlink" title="extern “C”的双重含义"></a>extern “C”的双重含义</h2><p>1.被它修饰的目标是“extern ”；<br>2.被它修饰的目标是“C ”。<br>让我们来详细解读这两重含义。<br>被extern “C”限定的函数或变量是extern类型的。<br>extern 是C/C++ 语言中表明函数和全局变量作用范围（可见性）的关键字，该关键字告诉编译器，其声明的函数和变量可以在本模块或其它模块中使用。记住下列语句：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">extern int a;</span><br></pre></td></tr></table></figure></p>
-<p>仅仅是一个变量的声明，其并不是在定义变量a ，并未为a 分配内存空间。变量a 在所有模块中作为一种全局变量只能被定义一次，否则会出现连接错误。<br>引用一个定义在其它模块的全局变量或函数（如全局函数或变量定义在A 模块，B 欲引用）有两种方法：<br>1.B 模块中include 模块A 的头文件；<br>2.模块B 中对欲引用的模块A 的变量或函数重新声明一遍，并前加extern 关键字。<br>通常，在模块的头文件中对本模块提供给其它模块引用的函数和全局变量以关键字extern 声明。例如，如果模块B 欲引用该模块A 中定义的全局变量和函数时只需包含模块A 的头文件即可。这样，模块B 中调用模块A 中的函数时，在编译阶段，模块B 虽然找不到该函数，但是并不会报错；它会在连接阶段中从模块A 编译生成的目标代码中找到此函数。<br>与extern 对应的关键字是static ，被它修饰的全局变量和函数只能在本模块中使用。因此，一个函数或变量只可能被本模块使用时，其不可能被extern “C” 修饰。<br>被extern “C” 修饰的变量和函数是按照C 语言方式编译和连接的。</p>
-<h2 id="未加extern-“C”-声明时的编译方式"><a href="#未加extern-“C”-声明时的编译方式" class="headerlink" title="未加extern “C” 声明时的编译方式"></a>未加extern “C” 声明时的编译方式</h2><p>首先看看C++ 中对类似C 的函数是怎样编译的。<br>作为一种面向对象的语言，C++ 支持函数重载，而过程式语言C 则不支持。函数被C++ 编译后在符号库中的名字与C 语言的不同。例如，假设某个函数的原型为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">void foo(int x, int y);</span><br></pre></td></tr></table></figure></p>
-<p>该函数被C 编译器编译后在符号库中的名字为_foo ，而C++ 编译器则会产生像_foo_int_int 之类的名字（不同的编译器可能生成的名字不同，但是都采用了相同的机制，生成的新名字称为“mangled name ”）。<br>_foo_int_int 这样的名字包含了函数名、函数参数数量及类型信息，C++ 就是靠这种机制来实现函数重载的。例如，在C++ 中，函数void foo(int x, int y) 与void foo(int x, float y) 编译生成的符号是不相同的，后者为_foo_int_float 。<br>同样地，C++ 中的变量除支持局部变量外，还支持类成员变量和全局变量。用户所编写程序的类成员变量可能与全局变量同名，我们以”.”来区分。而本质上，编译器在进行编译时，与函数的处理相似，也为类中的变量取了一个独一无二的名字，这个名字与用户程序中同名的全局变量名字不同。</p>
-<h2 id="未加extern-“C”声明时的连接方式"><a href="#未加extern-“C”声明时的连接方式" class="headerlink" title="未加extern “C”声明时的连接方式"></a>未加extern “C”声明时的连接方式</h2><p>假设在C++ 中，模块A 的头文件如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 模块A头文件moduleA.h</span><br><span class="line">#ifndef MODULE_A_H</span><br><span class="line">#define MODULE_A_H</span><br><span class="line">int foo(int x, int y);</span><br><span class="line">#endif</span><br></pre></td></tr></table></figure></p>
+<h2 id="extern-“C”的双重含义"><a href="#extern-“C”的双重含义" class="headerlink" title="extern “C”的双重含义"></a>extern “C”的双重含义</h2><ol>
+<li>被它修饰的目标是“extern”</li>
+<li>被它修饰的目标是“C”</li>
+</ol>
+<a id="more"></a>
+<p>让我们来详细解读这两重含义。<br>被extern “C”限定的函数或变量是extern类型的。<br>extern 是C/C++语言中表明函数和全局变量作用范围（可见性）的关键字，该关键字告诉编译器，其声明的函数和变量可以在本模块或其它模块中使用。记住下列语句：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">extern int a;</span><br></pre></td></tr></table></figure></p>
+<p>仅仅是一个变量的声明，其并不是在定义变量a，并未为a分配内存空间。变量a在所有模块中作为一种全局变量只能被定义一次，否则会出现连接错误。<br>引用一个定义在其它模块的全局变量或函数（如全局函数或变量定义在A 模块，B欲引用）有两种方法：</p>
+<ol>
+<li>B模块中include模块A的头文件；</li>
+<li>模块B中对欲引用的模块A的变量或函数重新声明一遍，并前加extern关键字。</li>
+</ol>
+<p>通常，在模块的头文件中对本模块提供给其它模块引用的函数和全局变量以关键字extern声明。例如，如果模块B欲引用该模块A中定义的全局变量和函数时只需包含模块A 的头文件即可。这样，模块B中调用模块A中的函数时，在编译阶段，模块B虽然找不到该函数，但是并不会报错；它会在连接阶段中从模块A编译生成的目标代码中找到此函数。<br>与extern对应的关键字是static，被它修饰的全局变量和函数只能在本模块中使用。因此，一个函数或变量只可能被本模块使用时，其不可能被extern “C”修饰。<br>被extern “C”修饰的变量和函数是按照C语言方式编译和连接的。</p>
+<h2 id="未加extern-“C”声明时的编译方式"><a href="#未加extern-“C”声明时的编译方式" class="headerlink" title="未加extern “C”声明时的编译方式"></a>未加extern “C”声明时的编译方式</h2><p>首先看看C++中对类似C的函数是怎样编译的。<br>作为一种面向对象的语言，C++支持函数重载，而过程式语言C则不支持。函数被C++编译后在符号库中的名字与C语言的不同。例如，假设某个函数的原型为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">void foo(int x, int y);</span><br></pre></td></tr></table></figure></p>
+<p>该函数被C编译器编译后在符号库中的名字为_foo，而C++编译器则会产生像_foo_int_int之类的名字（不同的编译器可能生成的名字不同，但是都采用了相同的机制，生成的新名字称为”mangled name”）。<br>_foo_int_int这样的名字包含了函数名、函数参数数量及类型信息，C++就是靠这种机制来实现函数重载的。例如，在C++中，函数void foo(int x, int y)与void foo(int x, float y)编译生成的符号是不相同的，后者为_foo_int_float。<br>同样地，C++中的变量除支持局部变量外，还支持类成员变量和全局变量。用户所编写程序的类成员变量可能与全局变量同名，我们以”.”来区分。而本质上，编译器在进行编译时，与函数的处理相似，也为类中的变量取了一个独一无二的名字，这个名字与用户程序中同名的全局变量名字不同。</p>
+<h2 id="未加extern-“C”声明时的连接方式"><a href="#未加extern-“C”声明时的连接方式" class="headerlink" title="未加extern “C”声明时的连接方式"></a>未加extern “C”声明时的连接方式</h2><p>假设在C++中，模块A的头文件如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 模块A头文件moduleA.h</span><br><span class="line">#ifndef MODULE_A_H</span><br><span class="line">#define MODULE_A_H</span><br><span class="line">int foo(int x, int y);</span><br><span class="line">#endif</span><br></pre></td></tr></table></figure></p>
 <p>在模块B中引用该函数：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// 模块B实现文件moduleB.cpp </span><br><span class="line">#include &quot;moduleA.h&quot;</span><br><span class="line">foo(2,3);</span><br></pre></td></tr></table></figure></p>
-<p>实际上，在连接阶段，连接器会从模块A 生成的目标文件moduleA.obj 中寻找_foo_int_int 这样的符号。</p>
-<h2 id="加extern-“C”-声明后的编译和连接方式"><a href="#加extern-“C”-声明后的编译和连接方式" class="headerlink" title="加extern “C” 声明后的编译和连接方式"></a>加extern “C” 声明后的编译和连接方式</h2><p>加extern “C”声明后，模块A的头文件变为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 模块A头文件moduleA.h</span><br><span class="line">#ifndef MODULE_A_H</span><br><span class="line">#define MODULE_A_H</span><br><span class="line">extern &quot;C&quot; int foo(int x, int y);</span><br><span class="line">#endif</span><br></pre></td></tr></table></figure></p>
-<p>在模块B的实现文件中仍然调用foo(2, 3) ，其结果是：<br>1.模块A 编译生成foo 的目标代码时，没有对其名字进行特殊处理，采用了C 语言的方式；<br>2.连接器在为模块B 的目标代码寻找foo(2, 3) 调用时，寻找的是未经修改的符号名_foo 。<br>如果在模块A 中函数声明了foo 为extern “C” 类型，而模块B 中包含的是extern int foo(int x, int y) ，则模块B 找不到模块A 中的函数；反之亦然。<br>所以，可以用一句话概括extern “C” 这个声明的真实目的（任何语言中的任何语法特性的诞生都不是随意而为的，来源于真实世界的需求驱动。我们在思考问题时，不能只停留在这个语言是怎么做的，还要问一问它为什么要这么做，动机是什么，这样我们可以更深入地理解许多问题）：实现C++ 与C 及其它语言的混合编程。<br>明白了C++ 中extern “C” 的设立动机，我们下面来具体分析extern “C” 通常的使用技巧。</p>
-<h2 id="extern-“C”的惯用法"><a href="#extern-“C”的惯用法" class="headerlink" title="extern “C”的惯用法"></a>extern “C”的惯用法</h2><p>（1）在C++ 中引用C 语言中的函数和变量，在包含C 语言头文件（假设为cExample.h ）时，需进行下列处理：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">extern &quot;C&quot;</span><br><span class="line">&#123;</span><br><span class="line">#include &quot;cExample.h&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>而在C 语言的头文件中，对其外部函数只能指定为extern 类型，C 语言中不支持extern “C” 声明，在.c 文件中包含了extern “C” 时会出现编译语法错误（error: expected identifier or ‘(’ before string constant ）。</p>
-<h2 id="C-引用C-函数工程例子"><a href="#C-引用C-函数工程例子" class="headerlink" title="C++ 引用C 函数工程例子"></a>C++ 引用C 函数工程例子</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">================</span><br><span class="line">. </span><br><span class="line">|-- Makefile </span><br><span class="line">|-- cEx.c </span><br><span class="line">|-- cEx.h </span><br><span class="line">|-- libcEx.so </span><br><span class="line">`-- test </span><br><span class="line">    |-- Makefile </span><br><span class="line">    |-- cppTest.cpp </span><br><span class="line">    `—test</span><br><span class="line">================</span><br></pre></td></tr></table></figure>
+<p>实际上，在连接阶段，连接器会从模块A生成的目标文件moduleA.obj中寻找_foo_int_int这样的符号。</p>
+<h2 id="加extern-“C”声明后的编译和连接方式"><a href="#加extern-“C”声明后的编译和连接方式" class="headerlink" title="加extern “C”声明后的编译和连接方式"></a>加extern “C”声明后的编译和连接方式</h2><p>加extern “C”声明后，模块A的头文件变为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 模块A头文件moduleA.h</span><br><span class="line">#ifndef MODULE_A_H</span><br><span class="line">#define MODULE_A_H</span><br><span class="line">extern &quot;C&quot; int foo(int x, int y);</span><br><span class="line">#endif</span><br></pre></td></tr></table></figure>
+<p>在模块B的实现文件中仍然调用foo(2, 3) ，其结果是：</p>
+<ol>
+<li>模块A 编译生成foo 的目标代码时，没有对其名字进行特殊处理，采用了C语言的方式；</li>
+<li>连接器在为模块B 的目标代码寻找foo(2, 3)调用时，寻找的是未经修改的符号名_foo。<br>如果在模块A 中函数声明了foo 为extern “C”类型，而模块B中包含的是extern int foo(int x, int y)，则模块B找不到模块A中的函数；反之亦然。<br>所以，可以用一句话概括extern “C”这个声明的真实目的（任何语言中的任何语法特性的诞生都不是随意而为的，来源于真实世界的需求驱动。我们在思考问题时，不能只停留在这个语言是怎么做的，还要问一问它为什么要这么做，动机是什么，这样我们可以更深入地理解许多问题）：实现C++与C及其它语言的混合编程。<br>明白了C++ 中extern “C”的设立动机，我们下面来具体分析extern “C”通常的使用技巧。</li>
+</ol>
+<h2 id="extern-“C”的惯用法"><a href="#extern-“C”的惯用法" class="headerlink" title="extern “C”的惯用法"></a>extern “C”的惯用法</h2><p>（1）在C++中引用C语言中的函数和变量，在包含C语言头文件（假设为cExample.h ）时，需进行下列处理：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">extern &quot;C&quot;</span><br><span class="line">&#123;</span><br><span class="line">#include &quot;cExample.h&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>而在C语言的头文件中，对其外部函数只能指定为extern类型，C语言中不支持extern “C”声明，在.c文件中包含了extern “C”时会出现编译语法错误（error: expected identifier or ‘(’ before string constant ）。</p>
+<blockquote>
+<p>C++ 引用C 函数工程例子</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">|-- Makefile </span><br><span class="line">|-- cEx.c </span><br><span class="line">|-- cEx.h </span><br><span class="line">|-- libcEx.so </span><br><span class="line">`-- test </span><br><span class="line">    |-- Makefile </span><br><span class="line">    |-- cppTest.cpp </span><br><span class="line">    `—test</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//cEx_h</span><br><span class="line">#ifndef CEX_H</span><br><span class="line">#define CEX_H</span><br><span class="line">extern int add(int x, int y);</span><br><span class="line">#endif//CEX_H</span><br><span class="line">// vim: set tabstop=4 shiftwidth=4 expandtab:</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//cEx_c</span><br><span class="line">#include &quot;cEx.h&quot;</span><br><span class="line">int add(int x, int y)</span><br><span class="line">&#123;</span><br><span class="line">    return x + y;</span><br><span class="line">&#125;</span><br><span class="line">// vim: set tabstop=4 shiftwidth=4 expandtab:</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//cppTest_cpp</span><br><span class="line">extern &quot;C&quot;</span><br><span class="line">&#123;</span><br><span class="line">#include &quot;cEx.h&quot;</span><br><span class="line">&#125;</span><br><span class="line">int main(int argc, char * argv[])</span><br><span class="line">&#123;</span><br><span class="line">    add(2, 3);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line">// vim: set tabstop=4 shiftwidth=4 expandtab:</span><br></pre></td></tr></table></figure>
-<p>如果C++ 调用一个C 语言编写的.DLL 时，当包括.DLL 的头文件或声明接口函数时，应加extern “C” {} 。<br>（2）在C 中引用C++ 语言中的函数和变量时，C++ 的头文件需添加extern “C” ，但是在C 语言中不能直接引用声明了extern “C” 的该头文件，应该仅将C 文件中将C++ 中定义的extern “C” 函数声明为extern 类型。</p>
-<h2 id="C-引用C-函数工程例子-1"><a href="#C-引用C-函数工程例子-1" class="headerlink" title="C 引用C++ 函数工程例子"></a>C 引用C++ 函数工程例子</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">================</span><br><span class="line">. </span><br><span class="line">|-- Makefile </span><br><span class="line">|-- cppEx.cpp </span><br><span class="line">|-- cppEx.h </span><br><span class="line">|-- libcppEx.so </span><br><span class="line">`-- test </span><br><span class="line">    |-- Makefile </span><br><span class="line">    |-- cTest.c </span><br><span class="line">    `—test</span><br><span class="line">================</span><br></pre></td></tr></table></figure>
+<p>如果C++ 调用一个C 语言编写的.DLL 时，当包括.DLL 的头文件或声明接口函数时，应加extern “C” {} 。<br>（2）在C中引用C++语言中的函数和变量时，C++的头文件需添加extern “C”，但是在C语言中不能直接引用声明了extern “C”的该头文件，应该仅将C文件中将C++中定义的extern “C”函数声明为extern类型。</p>
+<blockquote>
+<p>C引用C++函数工程例子</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">|-- Makefile </span><br><span class="line">|-- cppEx.cpp </span><br><span class="line">|-- cppEx.h </span><br><span class="line">|-- libcppEx.so </span><br><span class="line">`-- test </span><br><span class="line">    |-- Makefile </span><br><span class="line">    |-- cTest.c </span><br><span class="line">    `—test</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//cppEx_h</span><br><span class="line">#ifndef CPPEX_H</span><br><span class="line">#define CPPEX_H</span><br><span class="line">extern &quot;C&quot;</span><br><span class="line">&#123;</span><br><span class="line">    int add(int x, int y);</span><br><span class="line">&#125;</span><br><span class="line">#endif//CPPEX_H</span><br><span class="line">// vim: set tabstop=4 shiftwidth=4 expandtab:</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//cppEx_cpp</span><br><span class="line">#include &quot;cppEx.h&quot;</span><br><span class="line">int add(int x, int y)</span><br><span class="line">&#123;</span><br><span class="line">    return x + y;</span><br><span class="line">&#125;</span><br><span class="line">// vim: set tabstop=4 shiftwidth=4 expandtab:</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//cTest_c</span><br><span class="line">//the func add is  defined in outside module</span><br><span class="line">extern int add(int x, int y);</span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    add(2, 3);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line">// vim: set tabstop=4 shiftwidth=4 expandtab:</span><br></pre></td></tr></table></figure></div>
@@ -278,7 +307,11 @@ extern “C”的双重含义1.被它修饰的目标是“extern ”；2.被它�
 <div class="mask" id="mask"></div>
 <a href="javascript:;" id="gotop" class="waves-circle-light"><span class="icon icon-lg icon-chevron-up"></span></a>
 
-<div class="global-share" id="global-share" data-title="extern-c" data-pic="/img/avatar.png" data-summary="梁夏旭的个人博客" data-url="https://hayukleung.github.io/2012/09/02/extern-c/index.html">
+<div class="global-share" id="global-share" data-title="extern-c" data-pic="/img/avatar.png" data-summary="&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/liangxiaxu/archive/2012/09/02/2667730.html&quot;&gt;原文链接&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;extern-“C”的双重含义&quot;&gt;&lt;a href=&quot;#extern-“C”的双重含义&quot; class=&quot;headerlink&quot; title=&quot;extern “C”的双重含义&quot;&gt;&lt;/a&gt;extern “C”的双重含义&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;被它修饰的目标是“extern”&lt;/li&gt;
+&lt;li&gt;被它修饰的目标是“C”&lt;/li&gt;
+&lt;/ol&gt;" data-url="https://hayukleung.github.io/2012/09/02/extern-c/index.html">
     <div class="tit">分享到：</div>
     <ul class="reset share-icons">
       <li>

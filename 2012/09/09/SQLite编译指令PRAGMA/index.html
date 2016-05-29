@@ -11,8 +11,8 @@
 SQLite支持的编译指令(pragma)
 PRAGMA命令是用于修改SQLite库或查询SQLite库内部数据(non-table)的特殊命令。PRAGMA命令使用与其它SQLite命令(e.g. SELECT, INSERT)相同的接口，但在如下重要方面与其它命令不同:
 
-
 在未来的SQLite版本中部分pragma可能被删除或添加，小心使用。
+
 当使用未知的pragma语句时不产生报">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SQLite编译指令PRAGMA">
@@ -22,18 +22,18 @@ PRAGMA命令是用于修改SQLite库或查询SQLite库内部数据(non-table)的
 SQLite支持的编译指令(pragma)
 PRAGMA命令是用于修改SQLite库或查询SQLite库内部数据(non-table)的特殊命令。PRAGMA命令使用与其它SQLite命令(e.g. SELECT, INSERT)相同的接口，但在如下重要方面与其它命令不同:
 
-
 在未来的SQLite版本中部分pragma可能被删除或添加，小心使用。
+
 当使用未知的pragma语句时不产生报">
-<meta property="og:updated_time" content="2016-05-28T08:10:26.000Z">
+<meta property="og:updated_time" content="2016-05-29T06:53:24.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SQLite编译指令PRAGMA">
 <meta name="twitter:description" content="原文地址
 SQLite支持的编译指令(pragma)
 PRAGMA命令是用于修改SQLite库或查询SQLite库内部数据(non-table)的特殊命令。PRAGMA命令使用与其它SQLite命令(e.g. SELECT, INSERT)相同的接口，但在如下重要方面与其它命令不同:
 
-
 在未来的SQLite版本中部分pragma可能被删除或添加，小心使用。
+
 当使用未知的pragma语句时不产生报">
   
     <link rel="alternative" href="/atom.xml" title="xThinker" type="application/atom+xml">
@@ -158,7 +158,20 @@ PRAGMA命令是用于修改SQLite库或查询SQLite库内部数据(non-table)的
         <aside class="post-widget" id="post-widget">
 
           
-          <div class="post-share" id="post-share" data-title="SQLite编译指令PRAGMA" data-pic="/img/avatar.png" data-summary="梁夏旭的个人博客" data-url="https://hayukleung.github.io/2012/09/09/SQLite编译指令PRAGMA/index.html">
+          <div class="post-share" id="post-share" data-title="SQLite编译指令PRAGMA" data-pic="/img/avatar.png" data-summary="&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/liangxiaxu/archive/2012/09/09/2677361.html&quot;&gt;原文地址&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;SQLite支持的编译指令-pragma&quot;&gt;&lt;a href=&quot;#SQLite支持的编译指令-pragma&quot; class=&quot;headerlink&quot; title=&quot;SQLite支持的编译指令(pragma)&quot;&gt;&lt;/a&gt;SQLite支持的编译指令(pragma)&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;PRAGMA命令是用于修改SQLite库或查询SQLite库内部数据(non-table)的特殊命令。&lt;br&gt;PRAGMA命令使用与其它SQLite命令(e.g. SELECT, INSERT)相同的接口，但在如下重要方面与其它命令不同:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;在未来的SQLite版本中部分pragma可能被删除或添加，小心使用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;当使用未知的pragma语句时不产生报错。未知的pragma仅仅会被忽略，即是说若是打错了pragma语句SQLite不会提示用户。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;一些pragma在SQL编译阶段生效而非执行阶段。即是说若使用C语言的sqlite3_compile(), sqlite3_step(), sqlite3_finalize() API (或类似的封装接口中)，pragma可能在调用sqlite3_compile()期间起作用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;pragma命令不与其它SQL引擎兼容。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;" data-url="https://hayukleung.github.io/2012/09/09/SQLite编译指令PRAGMA/index.html">
     <div class="tit">分享到：</div>
     <ul class="reset share-icons">
       <li>
@@ -208,23 +221,30 @@ PRAGMA命令是用于修改SQLite库或查询SQLite库内部数据(non-table)的
             <div class="post-content" itemprop="postContent"><p><a href="http://www.cnblogs.com/liangxiaxu/archive/2012/09/09/2677361.html" target="_blank" rel="external">原文地址</a></p>
 <h2 id="SQLite支持的编译指令-pragma"><a href="#SQLite支持的编译指令-pragma" class="headerlink" title="SQLite支持的编译指令(pragma)"></a>SQLite支持的编译指令(pragma)</h2><blockquote>
 <p>PRAGMA命令是用于修改SQLite库或查询SQLite库内部数据(non-table)的特殊命令。<br>PRAGMA命令使用与其它SQLite命令(e.g. SELECT, INSERT)相同的接口，但在如下重要方面与其它命令不同:</p>
-</blockquote>
 <ul>
-<li>在未来的SQLite版本中部分pragma可能被删除或添加，小心使用。</li>
-<li>当使用未知的pragma语句时不产生报错。未知的pragma仅仅会被忽略，即是说若是打错了pragma语句SQLite不会提示用户。</li>
-<li>一些pragma在SQL编译阶段生效而非执行阶段。即是说若使用C语言的sqlite3_compile(), sqlite3_step(), sqlite3_finalize() API (或类似的封装接口中)，pragma可能在调用sqlite3_compile()期间起作用。</li>
-<li>pragma命令不与其它SQL引擎兼容。</li>
+<li><p>在未来的SQLite版本中部分pragma可能被删除或添加，小心使用。</p>
+</li>
+<li><p>当使用未知的pragma语句时不产生报错。未知的pragma仅仅会被忽略，即是说若是打错了pragma语句SQLite不会提示用户。</p>
+</li>
+<li><p>一些pragma在SQL编译阶段生效而非执行阶段。即是说若使用C语言的sqlite3_compile(), sqlite3_step(), sqlite3_finalize() API (或类似的封装接口中)，pragma可能在调用sqlite3_compile()期间起作用。</p>
+</li>
+<li><p>pragma命令不与其它SQL引擎兼容。</p>
+</li>
 </ul>
+</blockquote>
+<a id="more"></a>
 <blockquote>
 <p>可用的pragma命令有如下四个基本类型：</p>
-</blockquote>
 <ul>
-<li>用于察看当前数据库的模式。</li>
-<li>用于修改SQLite库的操作或查询当前的操作模式。</li>
-<li>用于查询或修改两个数据库的版本号，schema-version和user-version.</li>
-<li>用于调试库和校验数据库文件。</li>
+<li><p>用于察看当前数据库的模式。</p>
+</li>
+<li><p>用于修改SQLite库的操作或查询当前的操作模式。</p>
+</li>
+<li><p>用于查询或修改两个数据库的版本号，schema-version和user-version.</p>
+</li>
+<li><p>用于调试库和校验数据库文件。</p>
+</li>
 </ul>
-<blockquote>
 <p>PRAGMA命令语法</p>
 <p>sql-statement::=PRAGMA name [= value] | PRAGMA function(arg)</p>
 <p>使用整数值value的pragma也可以使用符号表示，字符串”on”，”true”，和”yes”等同于1，”off”，”false”和”no”等同于0。这些字符串大小写不敏感且无须进行引用。无法识别的字符串被当作1且不会报错。value返回时是整数。</p>
@@ -523,7 +543,20 @@ PRAGMA命令是用于修改SQLite库或查询SQLite库内部数据(non-table)的
 <div class="mask" id="mask"></div>
 <a href="javascript:;" id="gotop" class="waves-circle-light"><span class="icon icon-lg icon-chevron-up"></span></a>
 
-<div class="global-share" id="global-share" data-title="SQLite编译指令PRAGMA" data-pic="/img/avatar.png" data-summary="梁夏旭的个人博客" data-url="https://hayukleung.github.io/2012/09/09/SQLite编译指令PRAGMA/index.html">
+<div class="global-share" id="global-share" data-title="SQLite编译指令PRAGMA" data-pic="/img/avatar.png" data-summary="&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/liangxiaxu/archive/2012/09/09/2677361.html&quot;&gt;原文地址&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;SQLite支持的编译指令-pragma&quot;&gt;&lt;a href=&quot;#SQLite支持的编译指令-pragma&quot; class=&quot;headerlink&quot; title=&quot;SQLite支持的编译指令(pragma)&quot;&gt;&lt;/a&gt;SQLite支持的编译指令(pragma)&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;PRAGMA命令是用于修改SQLite库或查询SQLite库内部数据(non-table)的特殊命令。&lt;br&gt;PRAGMA命令使用与其它SQLite命令(e.g. SELECT, INSERT)相同的接口，但在如下重要方面与其它命令不同:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;在未来的SQLite版本中部分pragma可能被删除或添加，小心使用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;当使用未知的pragma语句时不产生报错。未知的pragma仅仅会被忽略，即是说若是打错了pragma语句SQLite不会提示用户。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;一些pragma在SQL编译阶段生效而非执行阶段。即是说若使用C语言的sqlite3_compile(), sqlite3_step(), sqlite3_finalize() API (或类似的封装接口中)，pragma可能在调用sqlite3_compile()期间起作用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;pragma命令不与其它SQL引擎兼容。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;" data-url="https://hayukleung.github.io/2012/09/09/SQLite编译指令PRAGMA/index.html">
     <div class="tit">分享到：</div>
     <ul class="reset share-icons">
       <li>
