@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>模拟频率、数字频率与模拟角频率</title>
+
+    <meta charset="UTF-8"/>
+
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+    <meta name="HandheldFriendly" content="true"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <link href="../asset/gitbook/style.css" type="text/css" rel="stylesheet"/>
+    <link href="../asset/gitbook/istyle.css" type="text/css" rel="stylesheet"/>
+
+    <style type="text/css">
+        
+            span.md_line{margin-bottom:0.5em; display:block; line-height:1.89}
+            .md_line br{ display: none;}
+            
+    </style>
+
+    <script>
+        var flowchat_options = {
+            'x': 0, 'y': 0, 'line-width': 1, 'line-length': 50, 'text-margin': 10, 'font-size': 13,
+            'font-color': '#3c3c3c', 'line-color': '#666666', 'element-color': '#666666', 'fill': 'transparent',
+            'yes-text': 'yes', 'no-text': 'no', 'arrow-end': 'block', 'class': 'flowchart', 'scale': 1,
+            'symbols': { 'start': {}, 'end': {}, 'condition': {}, 'inputoutput': {}, 'operation': {}, 'subroutine': {}}
+        }
+    </script>
+    <script type="text/javascript" src="../asset/other/raphael-min.js"></script>
+    <script type="text/javascript" src="../asset/other/flowchart.js"></script>
+    <script type="text/javascript" src="../asset/other/echarts.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+
+
+
+<div data-basepath="/service/gitbook" class="book">
+    <div class="book-summary">
+        <ul class="summary">
+            <li>
+                <a href="../index.html">Blog</a>
+            </li>
+            <li class="divider"></li>
+            
+                
+                
+    
+    <li data-level="1" class="chapter" data-path="readme.html">
+        
+        
+        <a href="../readme.html" ><b>1</b> Markdown文字材料</a>
+        
+            
+                    
+                
+        
+    </li>
+
+            
+                
+                
+    
+    <li data-level="2" class="chapter" data-path="posts/index.html">
+        
+        
+        <a href="#" ><b>2</b> posts</a>
+        
+            
+                    
+                        <ul class="articles">
+                            
+                                
+    
+    <li data-level="2.1" class="chapter" data-path="posts/C语言编译过程.html">
+        
+        
+        <a href="../posts/C语言编译过程.html" ><b>2.1</b> C语言编译过程</a>
+        
+    </li>
+
+                            
+                                
+    
+    <li data-level="2.2" class="chapter" data-path="posts/Matlab作图：A律13折线.html">
+        
+        
+        <a href="../posts/Matlab作图：A律13折线.html" ><b>2.2</b> Matlab作图:A律13折线</a>
+        
+    </li>
+
+                            
+                                
+    
+    <li data-level="2.3" class="chapter" data-path="posts/SQLite七种临时文件.html">
+        
+        
+        <a href="../posts/SQLite七种临时文件.html" ><b>2.3</b> SQLite七种临时文件</a>
+        
+    </li>
+
+                            
+                                
+    
+    <li data-level="2.4" class="chapter" data-path="posts/SQLite临时文件及其编译参数.html">
+        
+        
+        <a href="../posts/SQLite临时文件及其编译参数.html" ><b>2.4</b> SQLite临时文件及其编译参数</a>
+        
+    </li>
+
+                            
+                                
+    
+    <li data-level="2.5" class="chapter" data-path="posts/SQLite编译指令PRAGMA.html">
+        
+        
+        <a href="../posts/SQLite编译指令PRAGMA.html" ><b>2.5</b> SQLite编译指令PRAGMA</a>
+        
+    </li>
+
+                            
+                                
+    
+    <li data-level="2.6" class="chapter" data-path="posts/const-in-cpp.html">
+        
+        
+        <a href="../posts/const-in-cpp.html" ><b>2.6</b> const-in-cpp</a>
+        
+    </li>
+
+                            
+                                
+    
+    <li data-level="2.7" class="chapter" data-path="posts/extern-c.html">
+        
+        
+        <a href="../posts/extern-c.html" ><b>2.7</b> extern-c</a>
+        
+    </li>
+
+                            
+                                
+    
+    <li data-level="2.8" class="chapter" data-path="posts/hello-world.html">
+        
+        
+        <a href="../posts/hello-world.html" ><b>2.8</b> Hello World</a>
+        
+    </li>
+
+                            
+                                
+    
+    <li data-level="2.9" class="chapter" data-path="posts/inline-in-cpp.html">
+        
+        
+        <a href="../posts/inline-in-cpp.html" ><b>2.9</b> inline-in-cpp</a>
+        
+    </li>
+
+                            
+                                
+    
+    <li data-level="2.10" class="chapter" data-path="posts/resume.html">
+        
+        
+        <a href="../posts/resume.html" ><b>2.10</b> 个人简历</a>
+        
+    </li>
+
+                            
+                                
+    
+    <li data-level="2.11" class="chapter" data-path="posts/segmentation-fault.html">
+        
+        
+        <a href="../posts/segmentation-fault.html" ><b>2.11</b> segmentation-fault</a>
+        
+    </li>
+
+                            
+                                
+    
+    <li data-level="2.12" class="chapter" data-path="posts/symbol-lookup-error.html">
+        
+        
+        <a href="../posts/symbol-lookup-error.html" ><b>2.12</b> symbol-lookup-error</a>
+        
+    </li>
+
+                            
+                                
+    
+    <li data-level="2.13" class="chapter" data-path="posts/test.html">
+        
+        
+        <a href="../posts/test.html" ><b>2.13</b> Test</a>
+        
+    </li>
+
+                            
+                                
+    
+    <li data-level="2.14" class="chapter" data-path="posts/使用autotools制作makefile.html">
+        
+        
+        <a href="../posts/使用autotools制作makefile.html" ><b>2.14</b> 使用autotools制作makefile</a>
+        
+    </li>
+
+                            
+                                
+    
+    <li data-level="2.15" class="chapter" data-path="posts/如何修改Linux系统日期与时间.html">
+        
+        
+        <a href="../posts/如何修改Linux系统日期与时间.html" ><b>2.15</b> 如何修改Linux系统日期与时间</a>
+        
+    </li>
+
+                            
+                                
+    
+    <li data-level="2.16" class="chapter" data-path="posts/文本相似度算法.html">
+        
+        
+        <a href="../posts/文本相似度算法.html" ><b>2.16</b> 文本相似度算法</a>
+        
+    </li>
+
+                            
+                                
+    
+    <li data-level="2.17" class="chapter" data-path="posts/标准C的四个常用宏定义.html">
+        
+        
+        <a href="../posts/标准C的四个常用宏定义.html" ><b>2.17</b> 标准C的四个常用宏定义</a>
+        
+    </li>
+
+                            
+                                
+    
+    <li data-level="2.18" class="chapter active" data-path="posts/模拟频率、数字频率与模拟角频率.html">
+        
+        
+        <a href="../posts/模拟频率、数字频率与模拟角频率.html" ><b>2.18</b> 模拟频率、数字频率与模拟角频率</a>
+        
+    </li>
+
+                            
+                        </ul>
+                    
+                
+        
+    </li>
+
+            
+        </ul>
+
+    </div>
+
+    <div class="book-body">
+        <div class="body-inner">
+
+            <div class="book-header" role="navigation">
+                <h1>
+                    <a href="../index.html" > Blog</a>
+                </h1>
+            </div>
+
+            <div tabindex="-1" class="page-wrapper">
+                <div class="page-inner">
+                    <h2 class="post_title"> 模拟频率、数字频率与模拟角频率 </h2>
+                    <div class="post_body"> <p class="md_block">
+    <span class="md_line md_line_dom_embed"><a class="md_compiled" href="http://www.cnblogs.com/liangxiaxu/archive/2012/05/02/2479843.html">原文地址</a></span>
+</p>
+
+
+<p class="md_block">
+    <span class="md_line">概念：<br /></span>
+    <span class="md_line">模拟频率f：每秒经历多少个周期，单位Hz，即1/s<br /></span>
+    <span class="md_line">模拟角频率Ω：每秒经历多少弧度，单位rad/s<br /></span>
+    <span class="md_line">数字频率w：每个采样点间隔之间的弧度，单位rad</span>
+</p>
+
+
+<p class="md_block">
+    <span class="md_line">表达式：<br /></span>
+    <span class="md_line">模拟频率f：</span>
+</p>
+
+
+<pre class="lang_math"><code>cos(2pi*f*t)</code></pre>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">模拟角频率Ω：</span>
+</p>
+
+
+<pre class="lang_math"><code>cos(Ω*t)</code></pre>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">数字频率w：</span>
+</p>
+
+
+<pre class="lang_math"><code>cos(w*n)=cos(Ω*T*n) [T为采样间隔时间]</code></pre>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">关系：</span>
+</p>
+
+
+<pre class="lang_math"><code>Ω=2pi*f
+w=Ω*T</code></pre>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">推导：</span>
+</p>
+
+
+<pre class="lang_math"><code>cos(2pi*f*t)=cos(Ω*t)=cos(Ω*n*T)=cos(Ω*T*n)=cos(w*n)</code></pre>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">举例：</span>
+</p>
+
+
+<pre class="lang_math"><code>x(n)=sin(n*4*PI/7)的数字频率=4*PI/7</code></pre>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">关键点：</span>
+</p>
+
+
+<pre class="lang_math"><code>t=n*T</code></pre>
+
+<!--block_code_end-->
+<p class="md_block">
+    <span class="md_line">从时域角度理解：<br /></span>
+    <span class="md_line">模拟信号周期：<br /></span>
+    <span class="md_line">经过2<em>pi需多长时间，单位s；<br /></span>
+    <span class="md_line">example：f = 10Hz，则周期0.1s；<br /></span>
+    <span class="md_line">数字信号周期：<br /></span>
+    <span class="md_line">经过2</em>pi需多少个点，单位1；<br /></span>
+    <span class="md_line">example：f = 10Hz，fs = 20Hz，则周期2；<br /></span>
+    <span class="md_line">基准关系是2*pi</span>
+</p> </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="../asset/gitbook/app.js"></script>
+
+<script>require(["gitbook"], function (gitbook) {
+    var config = {"fontSettings": {"theme": null, "family": "sans", "size": 2}};
+    gitbook.start(config);
+});
+
+</script>
+
+
+
+
+
+</body>
+
+</html>
